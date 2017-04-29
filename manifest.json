@@ -1,0 +1,41 @@
+{
+    "name": "Auto Login",
+    "version": "0.1",
+    "manifest_version": 2,
+
+
+    "description": "Login in your favourite site in just one click",
+    "icons": {
+    	"18": "/static/images/icons/icon18.png",
+        "48": "/static/images/icons/icon48.png",
+        "64": "/static/images/icons/icon64.png",
+        "128": "/static/images/icons/icon128.png"
+    },
+
+    "browser_action": {
+        "default_title": "Auto Login",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*","file:///home/rap/Desktop/index.html"],
+            "js": ["content.js","/static/javascript/jquery-3.1.1.js"]
+        }
+    ],
+
+    "permissions": [
+        "cookies",
+        "http://*/*",
+        "https://*/*",
+        "tabs", 
+        "storage",
+        "<all_urls>",
+        "activeTab"
+    ]
+}

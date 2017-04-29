@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome-4.7.0/css/font.css">
+    <script type="text/javascript" src="/static/javascript/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/mdb.min.css"> -->
+    <script type="text/javascript" src="/static/javascript/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="/static/javascript/mdb.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/popup.css">
+    <script src="/static/javascript/aes.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="mainIconDiv"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
+        <div class="mainNameDiv">autologin</div>
+        <div class="closeDiv"><i class="fa fa-times closepopup" aria-hidden="true"></i></div>
+    </div>
+    <hr/>
+    <div class="social_container">
+        <div style="padding-bottom: 10px;"><i class="fa fa-user" aria-hidden="true" style="font-size: 20px"></i><span style="padding-left: 10px;font-size: 16px;">Accounts</span></div>
+        <div class="social">
+            <a href="#" account="facebook" class="btn btn-default account facebook"><span><img class="facebook-img" src="/static/images/social/facebook.png"></span> Facebook</a>
+        </div>
+        <div class="social">
+            <a href="#" account="odoo" class="btn btn-default account odoo"><span><img class="facebook-img" src="/static/images/social/odoo.png"></span> Odoo</a>
+        </div>
+        <div class="social">
+            <a href="#" account="linkdin" class="btn btn-default account linkedin"><span><img class="facebook-img" src="/static/images/social/linkedin.png"></span> Linkedin</a>
+        </div>
+        <div class="social">
+            <a href="#" account="github" class="btn btn-default account github">
+                <div class="social" style="background: red;"><img class="facebook-img" src="/static/images/social/github.png"></div> GitHub</a>
+        </div>
+        <div class="social">
+            <a href="#" account="moodle" class="btn btn-default account moodle"><span><img class="facebook-img" src="/static/images/social/moodle.png"></span> Moodle</a>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="btn-group" style="float: right;">
+            <button type="button" class="btn btn-default add-toggle"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <!-- <button type="button" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+            <button type="button" class="btn btn-default delete-toggle"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        </div>
+        <div id="add" style="display: none;">
+            <div>
+                <div class="form-group">
+                    <label for="sel1">Select Account:</label>
+                    <select class="form-control" id="account">
+                        <option selected="selected">Facebook</option>
+                        <option>Odoo</option>
+                        <option>Linkdin</option>
+                        <option>GitHub</option>
+                        <option>Moodle</option>
+                    </select>
+                    <div class="pass">
+                        <div class="input-group" style="float: right;">
+                            <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+						</span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="password">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input id="username" type="text" class="form-control" name="username" placeholder="username">
+                        </div>
+                    </div>
+                    <div class="input-group" style="float: right;">
+                        <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></i>
+					</span>
+                        <input id="pin" type="password" disabled="true" class="form-control" name="pin" placeholder="pin">
+                    </div>
+                    <div class="pincheck" style="padding-top: 11px;padding-left: 20px;">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="activepin" value="true"> Enable Pin
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary save" style="margin-left: 193px;">Save Data</button>
+                </div>
+            </div>
+        </div>
+        <div id="delete" style="display: none;">
+            <div class="form-group">
+                <label for="sel1">Select Account:</label>
+                <select class="form-control" id="delaccount">
+                    <option selected="selected">Facebook</option>
+                    <option>Odoo</option>
+                    <option>Linkdin</option>
+                    <option>GitHub</option>
+                    <option>Moodle</option>
+                </select>
+                <button type="button" class="btn btn-primary delete" style="margin-left: 193px;">Delete Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-success link_notify">
+            <i class="fa fa-check" aria-hidden="true"></i> <strong>Success!</strong> <span id="notifyMessage"></span>
+    </div>
+
+    <script type="text/javascript" src="/static/javascript/popup.js"></script>
+</body>
+
+</html>

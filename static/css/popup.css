@@ -1,0 +1,172 @@
+body{
+	min-height: 173px;
+    width: 495px;
+}
+
+.mainIconDiv{
+	display: inline;
+	font-size: 30px;
+    padding-left: 10px;
+}
+
+.mainNameDiv{
+	display: inline;
+    padding-left: 10px;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.closeDiv{
+	display: inline;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+hr{
+	margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.facebook{
+	color: #424b99;
+    background-color: #fff;
+    border-color: #424b99;
+    margin: 0;
+}
+
+.facebook:hover{
+	color: #fff;
+    background-color: #424b99;
+    border-color: #424b99;
+}
+
+.facebook-img{
+	height: 30px;
+}
+
+.linkedin{
+	color: #0072b6;
+    background-color: #fff;
+    border-color: #0072b6;
+    margin: 0;
+}
+
+.linkedin:hover{
+	color: #fff;
+    background-color: #0072b6;
+    border-color: #0072b6;
+}
+
+.github{
+	color: #0c0c0c;
+    background-color: #fff;
+    border-color: #0c0c0c;
+    margin: 0;
+}
+
+.github:hover{
+	color: #fff;
+    background-color:#0c0c0c;
+    border-color: #0c0c0c;
+}
+
+.odoo{
+	color: #b00d89;
+    background-color: #fff;
+    border-color: #b00d89;
+    margin: 0;
+}
+
+.odoo:hover{
+	color: #fff;
+    background-color:#b00d89;
+    border-color: #b00d89;
+}
+
+.moodle{
+	color: #f07a31;
+    background-color: #fff;
+    border-color: #f07a31;
+}
+
+.moodle:hover{
+	color: #fff;
+    background-color:#f07a31;
+    border-color: #f07a31;
+    margin: 0;
+}
+
+.account{
+	padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px; 
+}
+
+
+.social{
+	display: inline;
+}
+
+.social_container{
+	padding-left: 10px;
+}
+
+
+.footer{
+	top : 134px;
+    padding-right: 10px;
+    position: absolute;
+    width: 100%;
+    padding-left: 9px;
+}
+
+#add{
+    padding-top: 40px;
+    width: 100%;
+}
+
+#delete{
+	padding-top: 40px;
+	width: 100%;
+}
+
+.update{
+
+}
+
+.delete{
+	margin-top: 5px;
+}
+
+.input-group{
+	width: 236px;
+	padding-top: 5px;
+}
+
+.save{
+	margin-top: 5px;
+}
+
+.pincheck{
+	padding-top: 5px;
+    height: 39px;
+}
+/* .pass{
+	display: inline;
+} */
+
+.link_notify{
+    position: absolute;
+    top: 134px;
+    left: 9px;
+    z-index: 5000;
+    width: 397px;
+    height: 35px;
+    display: none;
+    border-radius: 5px;
+    padding-top: 6px;
+}
