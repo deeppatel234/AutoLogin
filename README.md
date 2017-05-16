@@ -15,4 +15,4 @@ Autologin gives a set pin option for open your account with PIN.
 ### Delete Account Data
 ![alt text](https://github.com/deeppatel234/AutoLogin/blob/master/delete%20account.png)
 
-Delete user login data.
+Select account and hit delete button for delete user login data.
